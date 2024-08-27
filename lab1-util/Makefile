@@ -411,5 +411,7 @@ myapi.key:
 		false; \
 	fi;
 
+$K/kalloc.o: $K/kalloc.c
+	$(CC) $(CFLAGS) $(EXTRAFLAG) -c -o $@ $<
 
 .PHONY: handin tarball tarball-pref clean grade handin-check
